@@ -11,6 +11,7 @@ internal class MessageManager : MonoBehaviour
 
   private readonly Queue<MessageData> messageQueue = new();
   private bool isDisplayingMessage = false;
+  private Coroutine messageCoroutine;
 
   private void Start()
   {
@@ -19,7 +20,7 @@ internal class MessageManager : MonoBehaviour
 
   private void TryDisplayNextMessage()
   {
-    if (isDisplayingMessage || messageQueue.Count == 0)
+    if (isDisplayingMessage || messageQueue.Count == 0 || messageCoroutine != null)
       return;
 
     MessageData newMessage = messageQueue.Dequeue();
@@ -31,7 +32,7 @@ internal class MessageManager : MonoBehaviour
     message.SetSender(sender);
     message.SetText(text);
 
-    StartCoroutine(MessageLifespan());
+    messageCoroutine = StartCoroutine(MessageLifespan());
   }
 
   internal void QueueComplaint(WaterTank waterTank)
@@ -42,6 +43,20 @@ internal class MessageManager : MonoBehaviour
     messageQueue.Enqueue(newComplaint);
 
     TryDisplayNextMessage();
+  }
+
+  internal void ClearMessages()
+  {
+    messageQueue.Clear();
+
+    if (messageCoroutine != null)
+    {
+      StopCoroutine(messageCoroutine);
+      messageCoroutine = null;
+    }
+
+    isDisplayingMessage = false;
+    message.SetAlpha(0);
   }
 
   private IEnumerator MessageLifespan()
@@ -82,6 +97,7 @@ internal class MessageManager : MonoBehaviour
     message.SetAlpha(0);
 
     isDisplayingMessage = false;
+    messageCoroutine = null;
     TryDisplayNextMessage();
   }
 }
