@@ -44,6 +44,8 @@ internal class WaterTank : MonoBehaviour
   private void FillWaterTank(float dTime)
   {
     waterLevel += 1 * dTime; // TODO: FillingRate
+    waterLevel = Math.Min(waterLevel, maxCapacity);
+
   }
 
   private void OnEmptyWaterTank()
