@@ -777,18 +777,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3361250125734207114, guid: 1c81d5c5643b55e44a8fd55e65051934, type: 3}
   m_PrefabInstance: {fileID: 5624901991757683169}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &173295221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173295216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f220833522d4044be9458b45e7e921, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MainValve
 --- !u!114 &173295222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5080,9 +5068,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8446176232454559178, guid: 1c81d5c5643b55e44a8fd55e65051934, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 173295221}
     - targetCorrespondingSourceObject: {fileID: 8446176232454559178, guid: 1c81d5c5643b55e44a8fd55e65051934, type: 3}
       insertIndex: -1
       addedObject: {fileID: 173295222}
