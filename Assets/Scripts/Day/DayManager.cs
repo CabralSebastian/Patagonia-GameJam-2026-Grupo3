@@ -4,10 +4,11 @@ using UnityEngine.UI;
 
 internal class DayManager : MonoBehaviour
 {
-  [SerializeField] private Image endDayPanel;
+  [SerializeField] private Image gameEndPanel;
+  [SerializeField] private Image dayEndPanel;
   [SerializeField] private CanvasGroup transitionPanel;
   [SerializeField] private float transitionDuration = 2f;
-  private readonly WaitForSeconds wait0_2Seconds = new(0.2f);
+  private readonly WaitForSecondsRealtime wait0_2Seconds = new(0.2f);
 
   [SerializeField] private float durationSeconds = 15f;
   [SerializeField] private int lastDay = 3;
@@ -17,7 +18,8 @@ internal class DayManager : MonoBehaviour
 
   private void Start()
   {
-    endDayPanel.gameObject.SetActive(false);
+    dayEndPanel.gameObject.SetActive(false);
+    gameEndPanel.gameObject.SetActive(false);
     transitionPanel.alpha = 0;
     transitionPanel.gameObject.SetActive(false);
 
@@ -38,22 +40,23 @@ internal class DayManager : MonoBehaviour
     if(dayCount == lastDay)
     {
       Debug.Log("El juego termino");
-      //TODO: Mostrar panel de final de juego.
+      gameEndPanel.gameObject.SetActive(true);
+      GameManager.Instance.Pause();
 
       return;
     }
 
     Debug.Log("El día termino!");
-    endDayPanel.gameObject.SetActive(true);
+    dayEndPanel.gameObject.SetActive(true);
 
-    //TODO: Pausar juego.
+    GameManager.Instance.Pause();
   }
 
   public void StartNextDay()
   {
     dayCount++;
     elapsedTime = 0;
-    endDayPanel.gameObject.SetActive(false);
+    dayEndPanel.gameObject.SetActive(false);
 
     GameManager.Instance.messageManager.ClearMessages();
 
@@ -70,7 +73,7 @@ internal class DayManager : MonoBehaviour
     /* Fade in */
     while (elapsedTime < halfDuration)
     {
-      elapsedTime += Time.deltaTime;
+      elapsedTime += Time.unscaledDeltaTime;
       transitionPanel.alpha = elapsedTime / halfDuration;
 
       yield return null;
@@ -85,7 +88,7 @@ internal class DayManager : MonoBehaviour
 
     while (elapsedTime > 0)
     {
-      elapsedTime -= Time.deltaTime;
+      elapsedTime -= Time.unscaledDeltaTime;
       transitionPanel.alpha = elapsedTime / halfDuration;
 
       yield return null;
@@ -94,6 +97,6 @@ internal class DayManager : MonoBehaviour
     transitionPanel.alpha = 0;
     transitionPanel.gameObject.SetActive(false);
     enabled = true;
-    //TODO: Despausar juego.
+    GameManager.Instance.Unpause();
   }
 }

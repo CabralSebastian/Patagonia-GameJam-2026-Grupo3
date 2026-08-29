@@ -1,14 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 internal class GameManager : MonoBehaviour
 {
   internal static GameManager Instance;
+  [SerializeField] private string MainMenuSceneName = "MainMenu";
   [SerializeField] internal WaterNetwork waterNetwork;
   [SerializeField] internal MessageManager messageManager;
 
   private void Awake()
   {
-    transform.SetParent(null);
     if (Instance && Instance != this)
     {
       Destroy(gameObject);
@@ -16,6 +17,21 @@ internal class GameManager : MonoBehaviour
     }
 
     Instance = this;
-    DontDestroyOnLoad(gameObject);
+  }
+
+  public void MainMenu()
+  {
+    Unpause();
+    SceneManager.LoadScene(MainMenuSceneName);
+  }
+
+  internal void Pause()
+  {
+    Time.timeScale = 0f;
+  }
+
+  internal void Unpause()
+  {
+    Time.timeScale = 1f;
   }
 }
