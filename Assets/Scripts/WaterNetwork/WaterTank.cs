@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,10 +9,14 @@ internal class WaterTank : MonoBehaviour
   [SerializeField] private Image waterSprite;
   [SerializeField] private Valve[] enablingValves;
 
+  [SerializeField] private string username = "Jhon Doe";
   [SerializeField] private float consumptionRate = 1f;
   [SerializeField] private float maxCapacity = 30f;
   [SerializeField] private float waterLevel;
+  [SerializeField] private float complaintCooldown = 10f;
+  private Coroutine complaintCoroutine;
 
+  internal string Username => username;
   private bool IsReceivingWater => enablingValves.Any(enablingValve => enablingValve.IsOpen);
   private float FillAmount => waterLevel / maxCapacity;
 
@@ -50,7 +55,19 @@ internal class WaterTank : MonoBehaviour
 
   private void OnEmptyWaterTank()
   {
-    Debug.Log("HDP! Me dejaste sin agua!");
+    complaintCoroutine ??= StartCoroutine(ComplaintLoop());
+  }
+
+  private IEnumerator ComplaintLoop()
+  {
+
+    while (waterLevel <= 0)
+    {
+      GameManager.Instance.messageManager.QueueComplaint(this);
+      yield return new WaitForSeconds(complaintCooldown);
+    }
+
+    complaintCoroutine = null;
   }
 }
 /*

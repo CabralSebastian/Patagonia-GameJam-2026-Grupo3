@@ -4,6 +4,7 @@ internal class GameManager : MonoBehaviour
 {
   internal static GameManager Instance;
   [SerializeField] internal WaterNetwork waterNetwork;
+  [SerializeField] internal MessageManager messageManager;
 
   private void Awake()
   {

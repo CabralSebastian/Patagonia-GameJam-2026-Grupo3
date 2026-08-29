@@ -1,20 +1,16 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
+[RequireComponent(typeof(CanvasGroup))]
 internal class Message : MonoBehaviour
 {
-  private Image image;
+  private CanvasGroup canvasGroup;
   [SerializeField] private TMP_Text messageSender;
   [SerializeField] private TMP_Text messageText;
-  [SerializeField] private float appearanceTimeSeconds = 3;
-  [SerializeField] private float fadingInTimeSeconds = 0.3f;
-  [SerializeField] private float fadingOutTimeSeconds = 3;
 
-  private void Start()
+  private void Awake()
   {
-    image = GetComponent<Image>();
+    canvasGroup = GetComponent<CanvasGroup>();
   }
 
   internal void SetSender(string sender)
@@ -29,8 +25,6 @@ internal class Message : MonoBehaviour
 
   internal void SetAlpha(float alpha)
   {
-    // image.setAlpha(alpha)
-    // messageSender.setAlpha(alpha)
-    // messageText.setAlpha(alpha)
+    canvasGroup.alpha = alpha;
   } 
 }

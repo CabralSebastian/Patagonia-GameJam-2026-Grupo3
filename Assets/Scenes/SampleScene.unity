@@ -990,6 +990,10 @@ PrefabInstance:
       value: WaterTank (4)
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: username
+      value: Carl
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: maxCapacity
       value: 20
       objectReference: {fileID: 0}
@@ -3106,6 +3110,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c81d5c5643b55e44a8fd55e65051934, type: 3}
+--- !u!1 &1167177105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1167177106}
+  - component: {fileID: 1167177107}
+  m_Layer: 0
+  m_Name: MessageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1167177106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167177105}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1167177107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167177105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90519ef54c5d2b44baa4dd1b33f7490a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MessageManager
+  message: {fileID: 1739478426}
+  popupTimeSeconds: 0.2
+  visibleTimeSeconds: 3
+  fadeoutTimeSeconds: 1
 --- !u!1001 &1179103510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3744,6 +3796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   waterNetwork: {fileID: 362421381}
+  messageManager: {fileID: 1167177107}
 --- !u!1 &1739478422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,6 +3808,7 @@ GameObject:
   - component: {fileID: 1739478423}
   - component: {fileID: 1739478425}
   - component: {fileID: 1739478424}
+  - component: {fileID: 1739478427}
   - component: {fileID: 1739478426}
   m_Layer: 5
   m_Name: Message
@@ -3835,11 +3889,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73a44f4af09f3be4090fc528c4d46640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PupUp
-  messageSender: {fileID: 0}
-  messageText: {fileID: 0}
-  appearanceTimeSeconds: 3
-  fadingInTimeSeconds: 0.3
-  fadingOutTimeSeconds: 3
+  messageSender: {fileID: 710010010}
+  messageText: {fileID: 31499907}
+--- !u!225 &1739478427
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739478422}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1755235120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3915,6 +3978,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755235120}
   m_CullTransparentMesh: 1
+--- !u!1 &1804747029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804747030}
+  - component: {fileID: 1804747031}
+  m_Layer: 0
+  m_Name: Day
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1804747030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804747029}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 714.317, y: 347.26862, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1804747031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804747029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3b0e313e84af443babe669a8a99da9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Day
+  durationSeconds: 15
 --- !u!1 &1808629459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,6 +4391,10 @@ PrefabInstance:
     - target: {fileID: 679264383595907356, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_Name
       value: WaterTank (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: username
+      value: Sandra
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: enablingValves.Array.size
@@ -4985,3 +5097,5 @@ SceneRoots:
   - {fileID: 583079805}
   - {fileID: 1717885387}
   - {fileID: 362421380}
+  - {fileID: 1167177106}
+  - {fileID: 1804747030}
