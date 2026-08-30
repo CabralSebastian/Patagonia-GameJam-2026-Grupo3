@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5931487047111261244, guid: 214b08276dccf5e4c8b0efc192dda9ee, type: 3}
+  m_Sprite: {fileID: -1938651447111707581, guid: 4bd400cd653532247a98285f9afbacca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,6 +90,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ValveButton
   valve: {fileID: 0}
   frameDuration: 0.03
-  normalSprite: {fileID: 5931487047111261244, guid: 214b08276dccf5e4c8b0efc192dda9ee, type: 3}
-  pressedSprite1: {fileID: 8156229935662094760, guid: 1d4d5279c4faf5941b531dc5f0b1ef98, type: 3}
-  pressedSprite2: {fileID: -4105963861117051501, guid: e0baeed2b3e130049b0310ecc130fd37, type: 3}
+  normalSprite: {fileID: -1938651447111707581, guid: 4bd400cd653532247a98285f9afbacca, type: 3}
+  pressedSprite1: {fileID: 3007937510207766682, guid: 5c96d7f805018a940b581b17c7177e52, type: 3}
+  pressedSprite2: {fileID: 3007937510207766682, guid: 5c96d7f805018a940b581b17c7177e52, type: 3}
