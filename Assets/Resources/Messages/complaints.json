@@ -1,6 +1,47 @@
+
+
 {
   "noWater": [
-    "Alguien tiene agua? porque acá nada",
-    "Me dejaron sin agua!"
+    "Alguien tiene agua? porque acá nada!",
+    "Me dejaron sin agua!",
+    "Acá no llega nada ",
+    "Seco total",
+    "No entra ni una gota che",
+    "sigo sin agua",
+    "mi tanque esta más seco que axilia de momia",
+    "Alguien más está sin agua o soy yo?",
+    "acá cortaron",
+    "Nada, ni un hilito",
+    "Se cortó de nuevo",
+    "Estoy con los baldes otra vez LPM",
+    "Alguien avisó al canalero?",
+    "otra vez sopa",
+    "Y el agua?",
+    "mi huerta esta mas seca que yo, imaginate"
+  ],
+  "lowWater": [
+    "Che, acá está bajando",
+    "se me acaba el aguaaaa",
+    "Me llega un hilo nomás",
+    "Está entrando raro, medio flojo",
+    "si no me reponen pronto me voy a quedar sin",
+    "No sé si va a alcanzar así",
+    "Va menos que ayer",
+    "Ojo que acá está flaqueando",
+    "Está entrando con aire",
+    "Se escucha que gorgotea"
+  ],
+  "allGood": [
+    "llegó el agua, gracias ;)",
+    "Acá está entrando bien",
+    "Todo en orden por mi lado",
+    "Ya está regando, joya",
+    "hay que aprovechar que volvio el agua",
+    "Llegando sin problema",
+    "Al fin, gracias",
+    "Volvió, gracias",
+    "venimos zafando",
+    "a llenar la pelopincho jojo"
   ]
 }
+

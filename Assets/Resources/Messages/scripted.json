@@ -2,16 +2,124 @@
   "events": [
     {
       "day": 1,
-      "time": 2,
+      "time": 3,
       "messages": [
-        {
-          "sender": "Norma",
-          "text": "buen día vecinos"
-        },
-        {
-          "sender": "Rubén",
-          "text": "tengamos paciencia"
-        }
+        { "sender": "Norma",  "text": "buen día vecinos ☺" },
+        { "sender": "Rubén",  "text": "arrancó el turnado, tengamos paciencia que es para todos" },
+        { "sender": "El Chino", "text": "para todos no, che" }
+      ]
+    },
+    {
+      "day": 1,
+      "time": 33,
+      "messages": [
+        { "sender": "Rubén", "text": "hay un límite de compuertas que se pueden mantener abiertas" },
+        { "sender": "Rubén", "text": "si se abrieran de más no llegaría presión a ninguna" }
+      ]
+    },
+    {
+      "day": 1,
+      "time": 78,
+      "messages": [
+        { "sender": "Marta", "text": "yo tengo tanque así que aguanto un montón😊" },
+        { "sender": "Nahuel", "text": "claro, VOS aguantás, el resto que se hamaque" }
+      ]
+    },
+    {
+      "day": 1,
+      "time": 126,
+      "messages": [
+        { "sender": "Nahuel", "text": "los de abajo siempre somos los últimos" }
+      ]
+    },
+    {
+      "day": 1,
+      "time": 162,
+      "messages": [
+        { "sender": "Norma", "text": "compartan esta cadena y no les va a faltar el agua ☺" },
+        { "sender": "El Chino", "text": "Norma BASTA" }
+      ]
+    },
+    {
+      "day": 2,
+      "time": 5,
+      "messages": [
+        { "sender": "Norma", "text": "buen día ☺☺" }
+      ]
+    },
+    {
+      "day": 2,
+      "time": 27,
+      "messages": [
+        { "sender": "Nahuel", "text": "mi tanque está seco 😅" },
+        { "sender": "Marta",  "text": "ya sabíamos que no te llega agua al tanque 🤣" }
+      ]
+    },
+    {
+      "day": 2,
+      "time": 66,
+      "messages": [
+        { "sender": "El Chino", "text": "en la parte de arriba riegan sin parar" },
+        { "sender": "Rubén", "text": "no empecemos con eso" },
+        { "sender": "El Chino", "text": "yo no dije que el intendente vive ahí 😎" }
+      ]
+    },
+    {
+      "day": 2,
+      "time": 111,
+      "messages": [
+        { "sender": "+54 9 ...", "text": "vendo leña bien sequita jeje" },
+        { "sender": "El Chino", "text": "este grupo es de riego o de ventas" },
+        { "sender": "Norma", "text": "las dos cosas querido 😊" }
+      ]
+    },
+    {
+      "day": 2,
+      "time": 153,
+      "messages": [
+		{ "sender": "El Chino", "text": "alguien sabe quién decide los turnos?" },
+		{ "sender": "Marta", "text": "el departamento de aguas 😂" },
+      ]
+    },
+    {
+      "day": 3,
+      "time": 6,
+      "messages": [
+        { "sender": "Nahuel", "text": "tercer día y seguimos..." }
+      ]
+    },
+    {
+      "day": 3,
+      "time": 36,
+      "messages": [
+        { "sender": "El Chino", "text": "un milagro, dejan de regar arriba y luego llega acá" },
+        { "sender": "Rubén", "text": "no es eso, el agua baja por gravedad nomás" },
+        { "sender": "El Chino", "text": "si no me llega agua yo no pago" }
+      ]
+    },
+    {
+      "day": 3,
+      "time": 87,
+      "messages": [
+{ "sender": "Marta", "text": "hace 30 años el canal alcanzaba, cada vez más gente y nadie hace nada" },
+{ "sender": "Norma", "text": "y ahora somos el triple" }
+      ]
+    },
+    {
+      "day": 3,
+      "time": 135,
+      "messages": [
+        { "sender": "Nahuel", "text": "el año que viene me voy, no renuevo el alquiler" },
+        { "sender": "Rubén", "text": "no digas eso" },
+        { "sender": "Nahuel", "text": ":(" }
+      ]
+    },
+    {
+      "day": 3,
+      "time": 168,
+      "messages": [
+        { "sender": "Norma", "text": "se viene la lluvia?" },
+        { "sender": "Marta", "text": "ojalá" }
       ]
     }
   ]
