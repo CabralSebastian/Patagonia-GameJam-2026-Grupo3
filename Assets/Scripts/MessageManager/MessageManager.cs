@@ -19,7 +19,7 @@ internal class MessageManager : MonoBehaviour
       return;
 
     MessageData newMessage = messageQueue.Dequeue();
-    DisplayMessage(newMessage.Sender, newMessage.Text);
+    DisplayMessage(newMessage.sender, newMessage.text);
   }
 
   private void DisplayMessage(string sender, string text)
@@ -32,10 +32,18 @@ internal class MessageManager : MonoBehaviour
 
   internal void QueueComplaint(WaterTank waterTank)
   {
-    string complaint = "HDP! Me dejaste sin agua!"; //TODO: Grab a random complaint from the json
-
+    string complaint = GameManager.Instance.MessageDatabase.GetRandomNoWaterComplaint();
+    
     MessageData newComplaint = new(waterTank.Username, complaint);
     messageQueue.Enqueue(newComplaint);
+
+    TryDisplayNextMessage();
+  }
+
+  internal void QueueEvent(MessageEventData messageEvent)
+  {
+    foreach (MessageData message in messageEvent.messages)
+      messageQueue.Enqueue(message);
 
     TryDisplayNextMessage();
   }

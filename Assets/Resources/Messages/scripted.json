@@ -1,0 +1,18 @@
+{
+  "events": [
+    {
+      "day": 1,
+      "time": 2,
+      "messages": [
+        {
+          "sender": "Norma",
+          "text": "buen día vecinos"
+        },
+        {
+          "sender": "Rubén",
+          "text": "tengamos paciencia"
+        }
+      ]
+    }
+  ]
+}

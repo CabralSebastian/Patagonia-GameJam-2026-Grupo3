@@ -8,6 +8,7 @@ internal class GameManager : MonoBehaviour
   [SerializeField] private string MainMenuSceneName = "MainMenu";
   [SerializeField] internal WaterNetwork waterNetwork;
   [SerializeField] internal MessageManager messageManager;
+  internal readonly MessageDatabase MessageDatabase = new();
 
   private void Awake()
   {
@@ -18,6 +19,7 @@ internal class GameManager : MonoBehaviour
     }
 
     Instance = this;
+    MessageDatabase.Load();
   }
 
   public void MainMenu()

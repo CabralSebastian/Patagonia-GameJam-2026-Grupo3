@@ -14,6 +14,10 @@ internal class DayManager : MonoBehaviour
   [SerializeField] private int lastDay = 3;
   private int dayCount = 1;
 
+  private MessageEventData[] currentDayEvents;
+
+  private int nextEventIndex;
+
   private float elapsedTime;
 
   private void Start()
@@ -22,14 +26,37 @@ internal class DayManager : MonoBehaviour
     gameEndPanel.gameObject.SetActive(false);
     transitionPanel.alpha = 0;
     transitionPanel.gameObject.SetActive(false);
+    StartDay();
   }
 
   private void Update()
   {
     elapsedTime += Time.deltaTime;
 
+    CheckScriptedEvents();
+
     if (elapsedTime >= dayDurationSeconds)
       EndDay();
+  }
+
+  private void CheckScriptedEvents()
+  {
+    while (
+      nextEventIndex < currentDayEvents.Length &&
+      elapsedTime >= currentDayEvents[nextEventIndex].time)
+    {
+      MessageEventData messageEvent = currentDayEvents[nextEventIndex];
+
+      GameManager.Instance.messageManager.QueueEvent(messageEvent);
+
+      nextEventIndex++;
+    }
+  }
+
+  private void StartDay()
+  {
+    currentDayEvents = GameManager.Instance.MessageDatabase.GetEventsForDay(dayCount);
+    nextEventIndex = 0;
   }
 
   private void EndDay()
@@ -52,6 +79,8 @@ internal class DayManager : MonoBehaviour
   {
     dayCount++;
     elapsedTime = 0;
+    nextEventIndex = 0;
+
     dayEndPanel.gameObject.SetActive(false);
 
     GameManager.Instance.messageManager.ClearMessages();

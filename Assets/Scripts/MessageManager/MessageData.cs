@@ -1,10 +1,13 @@
+using System;
+
+[Serializable]
 internal class MessageData
 {
-  internal readonly string Sender;
-  internal readonly string Text;
+  public  string sender;
+  public  string text;
   internal MessageData(string sender, string text)
   {
-    Sender = sender;
-    Text = text;
+    this.sender = sender;
+    this.text = text;
   }
 }
