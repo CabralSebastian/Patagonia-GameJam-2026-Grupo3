@@ -10,7 +10,7 @@ internal class WaterTank : MonoBehaviour
   [SerializeField] private Valve[] enablingValves;
 
   [SerializeField] private string username = "Jhon Doe";
-  [SerializeField] private float consumptionRate = 1f;
+  [SerializeField] private float[] consumptionRate = {1f, 1f, 1f};
   [SerializeField] private float maxCapacity = 30f;
   [SerializeField] private float waterLevel;
   [SerializeField] private float complaintCooldown = 10f;
@@ -39,7 +39,7 @@ internal class WaterTank : MonoBehaviour
 
   private void ConsumeWater(float dTime)
   {
-    waterLevel -= consumptionRate * dTime;
+    waterLevel -= consumptionRate[GameManager.Instance.DayManager.CurrentDayIndex] * dTime;
     waterLevel = Math.Max(waterLevel, 0);
 
     if(waterLevel == 0)

@@ -13,6 +13,7 @@ internal class DayManager : MonoBehaviour
   [SerializeField] private float dayDurationSeconds = 300f;
   [SerializeField] private int lastDay = 3;
   private int dayCount = 1;
+  internal int CurrentDayIndex => dayCount-1;
 
   private MessageEventData[] currentDayEvents;
 
@@ -59,6 +60,7 @@ internal class DayManager : MonoBehaviour
     nextEventIndex = 0;
     elapsedTime = 0;
 
+    GameManager.Instance.waterNetwork.Reset();
     AudioManager.Instance.Play("New_Day");
   }
 
