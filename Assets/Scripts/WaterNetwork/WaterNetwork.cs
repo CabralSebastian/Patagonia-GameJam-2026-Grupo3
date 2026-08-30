@@ -1,11 +1,15 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 internal class WaterNetwork : MonoBehaviour
 {
+  [SerializeField] private int maxOpenValves = 4;
   [SerializeField] private WaterNode waterSource;
   [SerializeField] private WaterNode[] valves;
-
+  private int OpenValveCount => valves.Count(valve => valve.IsOpen);
+  internal bool CanOpenValve => OpenValveCount < maxOpenValves;
+  
   private readonly HashSet<WaterNode> connectedValves = new();
 
   private void Start()

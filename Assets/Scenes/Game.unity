@@ -1481,6 +1481,7 @@ MonoBehaviour:
   - {fileID: 51043902}
   - {fileID: 1452052904}
   - {fileID: 1367327587}
+  maxOpenValves: 4
 --- !u!1001 &387115049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4881,7 +4882,7 @@ MonoBehaviour:
   dayEndPanel: {fileID: 1348181806}
   transitionPanel: {fileID: 1876360491}
   transitionDuration: 2
-  durationSeconds: 3
+  durationSeconds: 20
   lastDay: 3
 --- !u!1 &1808629459
 GameObject:

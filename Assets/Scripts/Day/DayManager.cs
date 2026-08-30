@@ -22,7 +22,6 @@ internal class DayManager : MonoBehaviour
     gameEndPanel.gameObject.SetActive(false);
     transitionPanel.alpha = 0;
     transitionPanel.gameObject.SetActive(false);
-
   }
 
   private void Update()

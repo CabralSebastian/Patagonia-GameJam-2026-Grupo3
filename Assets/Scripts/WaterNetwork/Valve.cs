@@ -52,7 +52,8 @@ internal class Valve : WaterNode, IPointerClickHandler
   }
 
   private bool CanOpen() => 
-    enablingNode.Any(enablingNode => GameManager.Instance.waterNetwork.IsConnected(enablingNode));
+    enablingNode.Any(enablingNode => GameManager.Instance.waterNetwork.IsConnected(enablingNode)) &&
+    GameManager.Instance.waterNetwork.CanOpenValve;
 
   private void UpdateImageColor()
   {
