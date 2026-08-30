@@ -56,4 +56,12 @@ internal class WaterNetwork : MonoBehaviour
         valve.Close();
     }
   }
+
+  internal void Reset()
+  {
+    foreach (WaterNode valve in valves)
+      if (valve.IsOpen)
+        valve.Close();
+    connectedValves.Clear();
+  }
 }
