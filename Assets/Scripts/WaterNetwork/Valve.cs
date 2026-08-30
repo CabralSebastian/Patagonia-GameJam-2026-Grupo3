@@ -35,7 +35,8 @@ internal class Valve : WaterNode, IPointerClickHandler
       GameManager.Instance.waterNetwork.Recalculate();
     }
     else
-      Debug.Log("No puedo abrir esta válvula"); // TODO: Trigger sound
+      AudioManager.Instance.Play("Cant_Open_Valve");
+
   }
 
   internal override bool IsEnabledBy(WaterNode waterNode) => 
@@ -45,6 +46,7 @@ internal class Valve : WaterNode, IPointerClickHandler
   {
     isOpen = true;
     UpdateImage();
+    AudioManager.Instance.Play("Open_Valve");
   }
 
   internal override void Close()

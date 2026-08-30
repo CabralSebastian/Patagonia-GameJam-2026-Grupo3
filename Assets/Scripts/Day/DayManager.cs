@@ -57,6 +57,9 @@ internal class DayManager : MonoBehaviour
   {
     currentDayEvents = GameManager.Instance.MessageDatabase.GetEventsForDay(dayCount);
     nextEventIndex = 0;
+    elapsedTime = 0;
+
+    AudioManager.Instance.Play("New_Day");
   }
 
   private void EndDay()
@@ -78,11 +81,8 @@ internal class DayManager : MonoBehaviour
   public void StartNextDay()
   {
     dayCount++;
-    elapsedTime = 0;
-    nextEventIndex = 0;
 
     dayEndPanel.gameObject.SetActive(false);
-
     GameManager.Instance.messageManager.ClearMessages();
 
     StartCoroutine(PanelTransition());
@@ -107,6 +107,8 @@ internal class DayManager : MonoBehaviour
     transitionPanel.alpha = 1;
 
     yield return wait0_2Seconds;
+
+    StartDay();
 
     /* Fade out */
     elapsedTime = halfDuration;

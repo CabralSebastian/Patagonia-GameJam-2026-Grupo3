@@ -77,7 +77,7 @@ internal class MessageManager : MonoBehaviour
     }
 
     message.SetAlpha(1);
-    //TODO: Add popup message sound
+    AudioManager.Instance.Play("Message_Notification");
 
     /*Visible*/
     timer=0;

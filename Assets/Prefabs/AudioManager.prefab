@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9114950285064414683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1150916904065310524}
+  - component: {fileID: 1787686054747340481}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1150916904065310524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114950285064414683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787686054747340481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114950285064414683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a91511559ac75f438eb3561cb0ef73d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  masterVolume: 1
+  Sounds:
+  - Name: Main_Theme
+    Clip: {fileID: 8300000, guid: 366ebf74c43643d418deab8a309b6bb7, type: 3}
+    Volume: 1
+    Loop: 1
+  - Name: Message_Notification
+    Clip: {fileID: 8300000, guid: f4838ee8159d60b408a1f6acb6626497, type: 3}
+    Volume: 1
+    Loop: 0
+  - Name: New_Day
+    Clip: {fileID: 8300000, guid: d72bd63629fb04e4eb46b505abd07fa7, type: 3}
+    Volume: 1
+    Loop: 0
+  - Name: Open_Valve
+    Clip: {fileID: 8300000, guid: 057279aca02cad74f89aaadddfb041c6, type: 3}
+    Volume: 1
+    Loop: 0
+  - Name: Cant_Open_Valve
+    Clip: {fileID: 8300000, guid: 4067231df80f32c439ef3a90031cfd56, type: 3}
+    Volume: 1
+    Loop: 0
+  - Name: Button_Click
+    Clip: {fileID: 8300000, guid: 5c57db21b70426e409f597ab62463c05, type: 3}
+    Volume: 1
+    Loop: 0

@@ -9,8 +9,8 @@ internal class Sound
 
   [Range(0f, 1f)]
   [SerializeField] internal float Volume;
-  [Range(0.1f, 3f)]
-  [SerializeField] internal float Pitch;
+  // [Range(0.1f, 3f)]
+  // [SerializeField] internal float Pitch;
   [SerializeField] internal bool Loop;
 
   [HideInInspector] internal AudioSource Source;
