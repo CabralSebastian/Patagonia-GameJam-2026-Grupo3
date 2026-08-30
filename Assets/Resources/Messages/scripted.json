@@ -5,7 +5,7 @@
       "time": 3,
       "messages": [
         { "sender": "Norma",  "text": "buen día vecinos ☺" },
-        { "sender": "Rubén",  "text": "arrancó el turnado, tengamos paciencia que es para todos" },
+        { "sender": "Rubén",  "text": "arrancó el turnado, paciencia que es para todos" },
         { "sender": "El Chino", "text": "para todos no, che" }
       ]
     },
@@ -101,8 +101,8 @@
       "day": 3,
       "time": 87,
       "messages": [
-{ "sender": "Marta", "text": "hace 30 años el canal alcanzaba, cada vez más gente y nadie hace nada" },
-{ "sender": "Norma", "text": "y ahora somos el triple" }
+{ "sender": "Marta", "text": "hace 30 años el mismo canal alcanzaba, pero cada vez hay más gente" },
+{ "sender": "Norma", "text": "y... ahora somos el triple" }
       ]
     },
     {
