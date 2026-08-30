@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Linq;
 
 [RequireComponent(typeof(Image))]
-internal class Valve : WaterNode, IPointerClickHandler
+internal class Valve : WaterNode
 {
   private Image image;
   [SerializeField] private Sprite greenLightSprite;
@@ -20,7 +19,7 @@ internal class Valve : WaterNode, IPointerClickHandler
     UpdateImage();
   }
 
-  public void OnPointerClick(PointerEventData eventData)
+  internal void Interact()
   {
     if (IsOpen)
     {
@@ -36,7 +35,6 @@ internal class Valve : WaterNode, IPointerClickHandler
     }
     else
       AudioManager.Instance.Play("Cant_Open_Valve");
-
   }
 
   internal override bool IsEnabledBy(WaterNode waterNode) => 

@@ -1148,6 +1148,22 @@ PrefabInstance:
       propertyPath: Sounds.Array.data[0].Volume
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1787686054747340481, guid: ed9d5b23029a2174bac58f5c56b3debe, type: 3}
+      propertyPath: Sounds.Array.data[2].Volume
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787686054747340481, guid: ed9d5b23029a2174bac58f5c56b3debe, type: 3}
+      propertyPath: Sounds.Array.data[3].Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787686054747340481, guid: ed9d5b23029a2174bac58f5c56b3debe, type: 3}
+      propertyPath: Sounds.Array.data[4].Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787686054747340481, guid: ed9d5b23029a2174bac58f5c56b3debe, type: 3}
+      propertyPath: Sounds.Array.data[5].Volume
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 9114950285064414683, guid: ed9d5b23029a2174bac58f5c56b3debe, type: 3}
       propertyPath: m_Name
       value: AudioManager
