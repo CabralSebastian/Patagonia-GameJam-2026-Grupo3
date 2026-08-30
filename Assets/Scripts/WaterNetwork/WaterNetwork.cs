@@ -63,5 +63,6 @@ internal class WaterNetwork : MonoBehaviour
       if (valve.IsOpen)
         valve.Close();
     connectedValves.Clear();
+    connectedValves.Add(waterSource);
   }
 }
