@@ -27,8 +27,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -920.18915, y: -435.1709, z: 0}
-  m_LocalScale: {x: 1.7438691, y: 1.7438691, z: 1.7438691}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7114346801535625026}
   - {fileID: 3884305811737846717}
@@ -51,9 +51,11 @@ MonoBehaviour:
   enablingValves:
   - {fileID: 0}
   - {fileID: 0}
+  username: Jhon Doe
   consumptionRate: 1
   maxCapacity: 15
   waterLevel: 0
+  complaintCooldown: 10
 --- !u!1 &1071354435241552511
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,8 +83,8 @@ RectTransform:
   m_GameObject: {fileID: 1071354435241552511}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5734376, y: 0.5734376, z: 0.5734376}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6116212866145289529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,8 +158,8 @@ RectTransform:
   m_GameObject: {fileID: 2540179042048299884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5734376, y: 0.5734376, z: 0.5734376}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6116212866145289529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
