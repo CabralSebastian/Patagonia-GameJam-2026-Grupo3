@@ -759,9 +759,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1333130332}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1562
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1078,9 +1094,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1601129623}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1562
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2358,9 +2390,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 798931025}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1562
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3129,7 +3177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd02c37829531294bb586eeaee9714b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterNetwork
-  maxOpenValves: 5
+  maxOpenValves: 060000000500000004000000
   waterSource: {fileID: 173295222}
   valves:
   - {fileID: 1972033710}
@@ -3471,9 +3519,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1889045687}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3987,9 +4051,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 43457471}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5285,9 +5365,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1972033710}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5681,9 +5777,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1760266553}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1562
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5815,9 +5927,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1955363820}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.234
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6514,9 +6642,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 144550844}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.2187
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2734
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7417,9 +7561,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 356333929}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7511,9 +7671,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 2091344146}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7755,9 +7931,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 1385901416}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1562
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -7849,9 +8041,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 2102607044}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.1562
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -13675,6 +13883,7 @@ MonoBehaviour:
   MainMenuSceneName: MainMenu
   waterNetwork: {fileID: 362421381}
   messageManager: {fileID: 1572457670}
+  DayManager: {fileID: 142445616}
 --- !u!224 &1727225090 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8267324056947694452, guid: 59ff712bbb8e30f4584a9cf54eb1899f, type: 3}
@@ -15012,9 +15221,25 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: consumptionRate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: 'enablingValves.Array.data[0]'
       value: 
       objectReference: {fileID: 2070113956}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[0]'
+      value: 0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[1]'
+      value: 0.2187
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149181579954991982, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
+      propertyPath: 'consumptionRate.Array.data[2]'
+      value: 0.2734
+      objectReference: {fileID: 0}
     - target: {fileID: 6116212866145289529, guid: 0b25ae0733138f34686b45ae6c95d065, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
