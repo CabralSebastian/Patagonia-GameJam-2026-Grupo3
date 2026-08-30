@@ -13,11 +13,6 @@ internal class MessageManager : MonoBehaviour
   private bool isDisplayingMessage = false;
   private Coroutine messageCoroutine;
 
-  private void Start()
-  {
-    message.SetAlpha(0);
-  }
-
   private void TryDisplayNextMessage()
   {
     if (isDisplayingMessage || messageQueue.Count == 0 || messageCoroutine != null)

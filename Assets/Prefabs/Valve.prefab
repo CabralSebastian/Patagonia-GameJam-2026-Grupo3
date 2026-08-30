@@ -59,14 +59,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 3099371405951779758, guid: e326da5103a547d41a20b84f4606793e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,4 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ef3b590f6376c44bfe4d2ffd6d4c0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Valve
-  enablingValves: []
+  greenLightSprite: {fileID: 5542944410741820529, guid: 89987085e9f430e41bbc9f5c7f099ec6, type: 3}
+  redLightSprite: {fileID: 3099371405951779758, guid: e326da5103a547d41a20b84f4606793e, type: 3}
+  enablingNode: []

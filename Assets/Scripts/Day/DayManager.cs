@@ -7,10 +7,10 @@ internal class DayManager : MonoBehaviour
   [SerializeField] private Image gameEndPanel;
   [SerializeField] private Image dayEndPanel;
   [SerializeField] private CanvasGroup transitionPanel;
-  [SerializeField] private float transitionDuration = 2f;
+  [SerializeField] private float transitionDurationSeconds = 4f;
   private readonly WaitForSecondsRealtime wait0_2Seconds = new(0.2f);
 
-  [SerializeField] private float durationSeconds = 15f;
+  [SerializeField] private float dayDurationSeconds = 300f;
   [SerializeField] private int lastDay = 3;
   private int dayCount = 1;
 
@@ -28,7 +28,7 @@ internal class DayManager : MonoBehaviour
   {
     elapsedTime += Time.deltaTime;
 
-    if (elapsedTime >= durationSeconds)
+    if (elapsedTime >= dayDurationSeconds)
       EndDay();
   }
 
@@ -38,16 +38,13 @@ internal class DayManager : MonoBehaviour
 
     if(dayCount == lastDay)
     {
-      Debug.Log("El juego termino");
       gameEndPanel.gameObject.SetActive(true);
       GameManager.Instance.Pause();
 
       return;
     }
 
-    Debug.Log("El día termino!");
     dayEndPanel.gameObject.SetActive(true);
-
     GameManager.Instance.Pause();
   }
 
@@ -67,7 +64,7 @@ internal class DayManager : MonoBehaviour
     transitionPanel.gameObject.SetActive(true);
 
     float elapsedTime = 0;
-    float halfDuration = transitionDuration / 2;
+    float halfDuration = transitionDurationSeconds / 2;
 
     /* Fade in */
     while (elapsedTime < halfDuration)

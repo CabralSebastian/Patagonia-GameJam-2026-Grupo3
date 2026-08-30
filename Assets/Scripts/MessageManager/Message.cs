@@ -11,6 +11,7 @@ internal class Message : MonoBehaviour
   private void Awake()
   {
     canvasGroup = GetComponent<CanvasGroup>();
+    canvasGroup.alpha = 0;
   }
 
   internal void SetSender(string sender)

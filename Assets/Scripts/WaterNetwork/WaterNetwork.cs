@@ -4,7 +4,7 @@ using UnityEngine;
 
 internal class WaterNetwork : MonoBehaviour
 {
-  [SerializeField] private int maxOpenValves = 4;
+  [SerializeField] private int maxOpenValves = 5;
   [SerializeField] private WaterNode waterSource;
   [SerializeField] private WaterNode[] valves;
   private int OpenValveCount => valves.Count(valve => valve.IsOpen);

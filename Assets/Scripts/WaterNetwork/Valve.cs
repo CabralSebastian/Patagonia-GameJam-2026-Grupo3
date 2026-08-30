@@ -7,6 +7,8 @@ using System.Linq;
 internal class Valve : WaterNode, IPointerClickHandler
 {
   private Image image;
+  [SerializeField] private Sprite greenLightSprite;
+  [SerializeField] private Sprite redLightSprite;
   [SerializeField] private WaterNode[] enablingNode;
   private bool isOpen;
   internal override bool IsOpen => isOpen;
@@ -15,7 +17,7 @@ internal class Valve : WaterNode, IPointerClickHandler
   {
     image = GetComponent<Image>();
     isOpen = false;
-    UpdateImageColor();
+    UpdateImage();
   }
 
   public void OnPointerClick(PointerEventData eventData)
@@ -42,24 +44,24 @@ internal class Valve : WaterNode, IPointerClickHandler
   internal void Open()
   {
     isOpen = true;
-    UpdateImageColor();
+    UpdateImage();
   }
 
   internal override void Close()
   {
     isOpen = false;
-    UpdateImageColor();
+    UpdateImage();
   }
 
   private bool CanOpen() => 
     enablingNode.Any(enablingNode => GameManager.Instance.waterNetwork.IsConnected(enablingNode)) &&
     GameManager.Instance.waterNetwork.CanOpenValve;
 
-  private void UpdateImageColor()
+  private void UpdateImage()
   {
     if(IsOpen)
-      image.color = Color.green;
+      image.sprite = greenLightSprite;
     else
-      image.color = Color.red;
+      image.sprite = redLightSprite;
   }
 }
