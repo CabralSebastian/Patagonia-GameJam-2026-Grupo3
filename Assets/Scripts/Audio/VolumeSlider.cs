@@ -15,4 +15,9 @@ public class VolumeSlider : MonoBehaviour
   {
     slider.value = AudioManager.Instance.MasterVolume;
   }
+
+  public void SetMasterVolume(float volume)
+  {
+    AudioManager.Instance.SetMasterVolume(volume);
+  }
 }

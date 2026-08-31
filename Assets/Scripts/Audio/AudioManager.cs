@@ -44,7 +44,7 @@ internal class AudioManager : MonoBehaviour
     sound.Source.Play();
   }
 
-  public void SetMasterVolume(float volume)
+  internal void SetMasterVolume(float volume)
   {
     masterVolume = volume;
 
