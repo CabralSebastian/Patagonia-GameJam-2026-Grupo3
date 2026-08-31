@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1d4d5279c4faf5941b531dc5f0b1ef98
+guid: e356af47b0b47bd4095cb6a10a87901b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8156229935662094760
-    second: BOTON ROJO 2_0
+      213: -1110034193570606539
+    second: BOTON APRETADO 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BOTON ROJO 2_0
+      name: BOTON APRETADO 1_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 11
-        width: 122
-        height: 81
+        x: 0
+        y: 2
+        width: 47
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8a9db85b9efb03170800000000000000
-      internalID: 8156229935662094760
+      spriteID: 532dfab38cd5890f0800000000000000
+      internalID: -1110034193570606539
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BOTON ROJO 2_0: 8156229935662094760
+      BOTON APRETADO 1_0: -1110034193570606539
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
