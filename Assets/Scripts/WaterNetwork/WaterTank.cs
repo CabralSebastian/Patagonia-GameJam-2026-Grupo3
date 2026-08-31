@@ -10,7 +10,7 @@ internal class WaterTank : MonoBehaviour
   [SerializeField] private Valve[] enablingValves;
 
   [SerializeField] private string username = "Jhon Doe";
-  [SerializeField] private float[] consumptionRate = {1f, 1f, 1f};
+  [SerializeField] private float[] consumptionRate;
   [SerializeField] private float maxCapacity = 30f;
   [SerializeField] private float waterLevel;
   [SerializeField] private float complaintCooldown = 10f;

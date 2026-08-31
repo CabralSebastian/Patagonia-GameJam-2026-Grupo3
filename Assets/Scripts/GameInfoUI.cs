@@ -3,8 +3,8 @@ using UnityEngine;
 
 internal class GameInfoUI : MonoBehaviour
 {
-  [SerializeField] private TMP_Text valvesText;
   [SerializeField] private TMP_Text dayText;
+  [SerializeField] private TMP_Text valvesText;
 
   private void Update()
   {
@@ -12,7 +12,7 @@ internal class GameInfoUI : MonoBehaviour
     DayManager dayManager = GameManager.Instance.DayManager;
 
     valvesText.text =
-      $"Válvulas: {waterNetwork.OpenValveCount} / {waterNetwork.MaxOpenValves}";
+      $"Válvulas: {waterNetwork.OpenValveCount}/{waterNetwork.MaxOpenValves}";
 
     dayText.text =
       $"Día: {dayManager.CurrentDayIndex + 1}";
