@@ -7,7 +7,7 @@ internal class OnboardingPanel : MonoBehaviour
 {
   private CanvasGroup canvasGroup;
   [SerializeField] private Button continueButton;
-  [SerializeField] private WaitForSecondsRealtime secondsToRead = new(10f);
+  [SerializeField] private WaitForSecondsRealtime secondsToRead = new(5f);
   [SerializeField] private float fadingTime = 2f;
 
   private void Start()
