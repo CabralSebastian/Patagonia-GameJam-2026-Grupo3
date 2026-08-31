@@ -70,10 +70,3 @@ internal class WaterTank : MonoBehaviour
     complaintCoroutine = null;
   }
 }
-/*
-
-+70% Agua mandan mensajes lindos
-
--35% Quejas sin
-
-*/

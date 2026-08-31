@@ -37,6 +37,8 @@ internal class MessageManager : MonoBehaviour
     MessageData newComplaint = new(waterTank.Username, complaint);
     messageQueue.Enqueue(newComplaint);
 
+    GameManager.Instance.DayManager.AddComplaint();
+
     TryDisplayNextMessage();
   }
 

@@ -1,11 +1,16 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 internal class DayManager : MonoBehaviour
 {
   [SerializeField] private Image gameEndPanel;
+  [SerializeField] private TMP_Text gameEndText;
+
   [SerializeField] private Image dayEndPanel;
+  [SerializeField] private TMP_Text dayEndText;
+  
   [SerializeField] private CanvasGroup transitionPanel;
   [SerializeField] private float transitionDurationSeconds = 4f;
   private readonly WaitForSecondsRealtime wait0_2Seconds = new(0.2f);
@@ -16,10 +21,11 @@ internal class DayManager : MonoBehaviour
   internal int CurrentDayIndex => dayCount-1;
 
   private MessageEventData[] currentDayEvents;
-
   private int nextEventIndex;
-
   private float elapsedTime;
+
+  private int dailyComplaints = 0;
+  private int totalComplaints = 0;
 
   private void Start()
   {
@@ -38,6 +44,11 @@ internal class DayManager : MonoBehaviour
 
     if (elapsedTime >= dayDurationSeconds)
       EndDay();
+  }
+
+  internal void AddComplaint()
+  {
+    dailyComplaints++;
   }
 
   private void CheckScriptedEvents()
@@ -59,6 +70,7 @@ internal class DayManager : MonoBehaviour
     currentDayEvents = GameManager.Instance.MessageDatabase.GetEventsForDay(dayCount);
     nextEventIndex = 0;
     elapsedTime = 0;
+    dailyComplaints = 0;
 
     GameManager.Instance.waterNetwork.Reset();
     AudioManager.Instance.Play("New_Day");
@@ -66,18 +78,21 @@ internal class DayManager : MonoBehaviour
 
   private void EndDay()
   {
+    totalComplaints += dailyComplaints;
     enabled = false;
 
     if(dayCount == lastDay)
     {
+      gameEndText.text = $"Terminaste el juego con {totalComplaints} quejas!";
       gameEndPanel.gameObject.SetActive(true);
-      GameManager.Instance.Pause();
+      GameManager.Instance.StopTime();
 
       return;
     }
 
+    dayEndText.text = $"Terminaste el día con {dailyComplaints} quejas!";
     dayEndPanel.gameObject.SetActive(true);
-    GameManager.Instance.Pause();
+    GameManager.Instance.StopTime();
   }
 
   public void StartNextDay()
@@ -126,6 +141,6 @@ internal class DayManager : MonoBehaviour
     transitionPanel.alpha = 0;
     transitionPanel.gameObject.SetActive(false);
     enabled = true;
-    GameManager.Instance.Unpause();
+    GameManager.Instance.ResumeTime();
   }
 }

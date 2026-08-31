@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 internal class GameManager : MonoBehaviour
 {
@@ -9,6 +10,9 @@ internal class GameManager : MonoBehaviour
   [SerializeField] internal WaterNetwork waterNetwork;
   [SerializeField] internal MessageManager messageManager;
   [SerializeField] internal DayManager DayManager;
+  [SerializeField] internal Image PausePanel;
+  private bool isPaused = false;
+
   internal readonly MessageDatabase MessageDatabase = new();
 
   private void Awake()
@@ -23,18 +27,36 @@ internal class GameManager : MonoBehaviour
     MessageDatabase.Load();
   }
 
+  private void Update()
+  {
+    if (Input.GetKeyDown(KeyCode.Space) ||
+      Input.GetKeyDown(KeyCode.Escape))
+    {
+      TogglePause();
+    }
+  }
+
+  private void TogglePause()
+  {
+    isPaused = !isPaused;
+    PausePanel.gameObject.SetActive(isPaused);
+
+    Action toggleTime = isPaused ? StopTime : ResumeTime;
+    toggleTime();
+  }
+
   public void MainMenu()
   {
-    Unpause();
+    ResumeTime();
     SceneManager.LoadScene(MainMenuSceneName);
   }
 
-  internal void Pause()
+  internal void StopTime()
   {
     Time.timeScale = 0f;
   }
 
-  internal void Unpause()
+  internal void ResumeTime()
   {
     Time.timeScale = 1f;
   }
