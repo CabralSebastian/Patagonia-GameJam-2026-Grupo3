@@ -6934,81 +6934,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772371727}
   m_CullTransparentMesh: 1
---- !u!1 &780797809
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 780797810}
-  - component: {fileID: 780797812}
-  - component: {fileID: 780797811}
-  m_Layer: 0
-  m_Name: tablero solito_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &780797810
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780797809}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 97.521736, y: 97.521736, z: 97.521736}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1808629463}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -730.52, y: -460.81}
-  m_SizeDelta: {x: 4.706, y: 2.862}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &780797811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780797809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -4422557801415652473, guid: 645e33210c26c1848beb3c67032204e1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &780797812
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780797809}
-  m_CullTransparentMesh: 1
 --- !u!1001 &790637112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15311,7 +15236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 229.47382, y: 138.36472}
+  m_AnchoredPosition: {x: 230.1, y: 140.9}
   m_SizeDelta: {x: 458.9576, y: 281.5094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1762521577
@@ -15686,7 +15611,6 @@ RectTransform:
   m_Children:
   - {fileID: 1459377809}
   - {fileID: 1432358348}
-  - {fileID: 780797810}
   - {fileID: 2040954206}
   - {fileID: 1762521576}
   - {fileID: 1774935073}
@@ -17558,6 +17482,10 @@ PrefabInstance:
       propertyPath: valve
       value: 
       objectReference: {fileID: 1385901416}
+    - target: {fileID: 3552526727450427994, guid: 59ff712bbb8e30f4584a9cf54eb1899f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7878403711454745176, guid: 4c9d2b275d98d5841992133d221315a1, type: 3}
     - target: {fileID: 4412669422783264361, guid: 59ff712bbb8e30f4584a9cf54eb1899f, type: 3}
       propertyPath: m_Name
       value: ValveButton (8)

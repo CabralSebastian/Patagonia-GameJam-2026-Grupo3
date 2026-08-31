@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8615773781325673059, guid: 961d03250f247374eb5b48133d542cf1, type: 3}
+  m_Sprite: {fileID: -6223146181867275601, guid: 3f118e636a7b83f4a9b05fa6f848fd2c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -89,6 +89,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResetButton
   frameDuration: 0.03
-  normalSprite: {fileID: 8615773781325673059, guid: 961d03250f247374eb5b48133d542cf1, type: 3}
-  pressedSprite1: {fileID: -1110034193570606539, guid: e356af47b0b47bd4095cb6a10a87901b, type: 3}
-  pressedSprite2: {fileID: -1110034193570606539, guid: e356af47b0b47bd4095cb6a10a87901b, type: 3}
+  normalSprite: {fileID: -6223146181867275601, guid: 3f118e636a7b83f4a9b05fa6f848fd2c, type: 3}
+  pressedSprite1: {fileID: -2932635186898217373, guid: cc557c2570741dc4190235de535e1675, type: 3}
+  pressedSprite2: {fileID: -2932635186898217373, guid: cc557c2570741dc4190235de535e1675, type: 3}
