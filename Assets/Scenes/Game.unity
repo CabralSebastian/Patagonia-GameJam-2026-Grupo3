@@ -213,11 +213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3310265208873204424, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3310265208873204424, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6381240908385212346, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -245,15 +245,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7284229461168999405, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7284229461168999405, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7284229461168999405, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7429562224718173414, guid: 9c1e6404421d7af45ae63f86d7a2c374, type: 3}
       propertyPath: m_Pivot.x
@@ -1371,7 +1371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &122197909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11641,8 +11641,9 @@ GameObject:
   - component: {fileID: 1370964631}
   - component: {fileID: 1370964633}
   - component: {fileID: 1370964632}
+  - component: {fileID: 1370964634}
   m_Layer: 5
-  m_Name: Reloj
+  m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11706,6 +11707,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370964630}
   m_CullTransparentMesh: 1
+--- !u!114 &1370964634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370964630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a1bb5c57ea5e34aba18b09ab8269f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Reloj
+  initialHour: 9
+  initialMinute: 0
+  finalHour: 17
+  finalMinute: 0
+  time: {fileID: 1616597425}
 --- !u!1 &1376384969
 GameObject:
   m_ObjectHideFlags: 0
