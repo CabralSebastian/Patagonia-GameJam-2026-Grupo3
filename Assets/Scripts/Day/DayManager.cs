@@ -23,6 +23,7 @@ internal class DayManager : MonoBehaviour
   private MessageEventData[] currentDayEvents;
   private int nextEventIndex;
   private float elapsedTime;
+  internal float DayProgress => elapsedTime / dayDurationSeconds;
 
   private int dailyComplaints = 0;
   private int totalComplaints = 0;
