@@ -4,7 +4,13 @@
       "day": 1,
       "time": 3,
       "messages": [
-        { "sender": "Norma",  "text": "buen día vecinos ☺" },
+        { "sender": "Norma",  "text": "buen día vecinos ☺" }
+      ]
+     },
+    {
+      "day": 1,
+      "time": 15,
+      "messages": [
         { "sender": "Rubén",  "text": "arrancó el turnado, paciencia que es para todos" },
         { "sender": "El Chino", "text": "para todos no, che" }
       ]
@@ -12,7 +18,7 @@
     {
       "day": 1,
       "time": 33,
-      "messages": [
+	  "messages": [
         { "sender": "Rubén", "text": "hay un límite de compuertas que se pueden mantener abiertas" },
         { "sender": "Rubén", "text": "si se abrieran de más no llegaría presión a ninguna" }
       ]
@@ -21,8 +27,8 @@
       "day": 1,
       "time": 78,
       "messages": [
-        { "sender": "Marta", "text": "yo tengo tanque así que aguanto un montón😊" },
-        { "sender": "Nahuel", "text": "claro, VOS aguantás, el resto que se hamaque" }
+        { "sender": "Marta", "text": "tampoco es que se corte tanto che😊" },
+        { "sender": "Nahuel", "text": "claro, VOS estás arriba, el resto que se hamaque" }
       ]
     },
     {
@@ -44,15 +50,15 @@
       "day": 2,
       "time": 5,
       "messages": [
-        { "sender": "Norma", "text": "buen día ☺☺" }
+        { "sender": "Norma", "text": "buen día 😊😊" }
       ]
     },
     {
       "day": 2,
       "time": 27,
       "messages": [
-        { "sender": "Nahuel", "text": "mi tanque está seco 😅" },
-        { "sender": "Marta",  "text": "ya sabíamos que no te llega agua al tanque 🤣" }
+        { "sender": "Nahuel", "text": "el turnado este no me alcanza para llenar el tanque" },
+        { "sender": "Marta",  "text": "ya sabíamos que no te llega agua al tanque Nahuel🤣" }
       ]
     },
     {
@@ -61,7 +67,7 @@
       "messages": [
         { "sender": "El Chino", "text": "en la parte de arriba riegan sin parar" },
         { "sender": "Rubén", "text": "no empecemos con eso" },
-        { "sender": "El Chino", "text": "yo no dije que el intendente vive ahí 😎" }
+        { "sender": "El Chino", "text": "yo no dije que el intendente viva ahí 😎" }
       ]
     },
     {
@@ -94,7 +100,7 @@
       "messages": [
         { "sender": "El Chino", "text": "un milagro, dejan de regar arriba y luego llega acá" },
         { "sender": "Rubén", "text": "no es eso, el agua baja por gravedad nomás" },
-        { "sender": "El Chino", "text": "si no me llega agua yo no pago" }
+        { "sender": "El Chino", "text": "yo aviso, si no me llega agua no pago la boleta" }
       ]
     },
     {
@@ -109,7 +115,7 @@
       "day": 3,
       "time": 135,
       "messages": [
-        { "sender": "Nahuel", "text": "el año que viene me voy, no renuevo el alquiler" },
+        { "sender": "Nahuel", "text": "si sigue así el año que viene no renuevo el alquiler" },
         { "sender": "Rubén", "text": "no digas eso" },
         { "sender": "Nahuel", "text": ":(" }
       ]
